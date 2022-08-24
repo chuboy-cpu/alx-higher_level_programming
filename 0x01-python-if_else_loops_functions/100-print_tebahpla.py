@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-for alpha in range(122, 96, -1):
-    char = chr(alpha)
-    if (alpha % 2 == 1):
-        char = chr(alpha - (ord('a') - ord('A')))
-        print("{}".format(char), end="")
+x = 0
+for i in range(ord('z'), ord('a') - 1, -1):
+    print("{}".format(chr(i - x)), end="")
+    x = 32 if x == 0 else 0
