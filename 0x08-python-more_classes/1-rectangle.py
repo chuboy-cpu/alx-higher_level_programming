@@ -2,12 +2,18 @@
 
 """ Defines a class """
 
+
 class Rectangle:
     """ Defines a rectangle """
+
     def __init__(self, width=0, height=0):
         """ Initialiises a rectangle """
-        self.width = width
-        self.height = height
+
+        self.__width = width
+        """ width of rectangle """
+
+        self.__height = height
+        """ height of rectangle """
 
     @property
     def width(self):
