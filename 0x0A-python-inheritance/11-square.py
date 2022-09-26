@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 
 """ Defines a class that inherits from Rectangle """
-
 Rectangle = __import__('9-rectangle').Rectangle
+
 
 class Square(Rectangle):
     """ class Square inherited from class Rectangle """
@@ -14,7 +14,7 @@ class Square(Rectangle):
 
     def area(self):
         """ returns the area of a square """
-        return self.__size * self.__sizei
+        return self.__size * self.__size
 
     def __str__(self):
         """ represents a square """
