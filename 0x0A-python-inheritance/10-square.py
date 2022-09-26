@@ -14,8 +14,4 @@ class Square(Rectangle):
 
     def area(self):
         """ returns the area of a square """
-        return self.__size * self.__sizei
-
-    def __str__(self):
-        """ represents a square """
-        return "[Square] {}/{}".format(self.__size, self.__size)
+        return self.__size * self.__size
