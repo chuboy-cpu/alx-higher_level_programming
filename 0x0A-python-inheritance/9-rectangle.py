@@ -1,9 +1,6 @@
 #!/usr/bin/python3
 
 """ Defines a class that inherits from BaseGemetry """
-
-
-
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
