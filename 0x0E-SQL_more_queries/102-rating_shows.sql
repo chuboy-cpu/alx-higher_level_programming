@@ -1,6 +1,6 @@
 -- lists all shows from hbtn_0d_tvshows_rate by their rating
 -- Results must be sorted in descending order by the rating
-SELECT tv_shows.title, SUM (tv_shows_rating.rate) AS rating
+SELECT tv_shows.title, SUM (tv_shows_ratings.rate) AS rating
 FROM tv_shows
 INNER JOIN tv_show_ratings
 ON tv_shows.id = tv_show_ratings.show_id
