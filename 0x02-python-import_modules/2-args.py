@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+
 if __name__ == "__main__":
     import sys
     x = len(sys.argv) - 1
@@ -8,6 +8,6 @@ if __name__ == "__main__":
     else:
         if x > 1:
             print("s", end="")
-            print(":")
-            for y in range(1, x + 1):
-                print("{}: {}".format(y, sys.argv[y]))
+        print(":")
+        for y in range(1, x + 1):
+            print("{}: {}".format(y, sys.argv[y]))
