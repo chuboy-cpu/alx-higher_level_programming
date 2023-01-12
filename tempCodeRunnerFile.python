@@ -1,0 +1,33 @@
+# #for i in range(1,22):
+#   #  if i % 2 != 0:
+#    #     print(i)
+
+import time
+
+def buildTraingles(size):
+    buildSize = size + 1
+    for i in range(1,buildSize):
+         print(f"{' '*(buildSize-i)} {f' *'*i} ")
+         time.sleep(0.3)
+
+
+
+
+while True: 
+    noOfT = input('Enter the number of triangles: ')
+    buildTraingles(int(noOfT))
+
+# def buildTraingle(size):
+#     rows = size + (size-1)
+#     rangeLenght = rows * size
+#     cols = 1
+#     for i in range(rangeLenght):
+#         if i < rows-1:
+#             print(' ', end='')
+#         else:
+#             print('*', end='')
+
+# # buildTraingle(2)
+
+# cchcc
+
