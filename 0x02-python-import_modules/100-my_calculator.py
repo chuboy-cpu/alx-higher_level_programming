@@ -3,12 +3,12 @@ if __name__ == "__main__":
     from calculator_1 import add, sub, mul, div
     import sys
     if len(sys.argv) - 1 != 3:
-        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
+        print("Usage: ./100-my_calculator.py <a> <operator> <b>", end="")
         exit(1)
     operations = {"+": add, "-": sub, "*": mul, "/": div}
     if sys.argv[2] not in list(operations.keys()):
-        print("Unknown operator. Availble operators: +, -, * and /")
-        sys.exit(1)
+        print("Unknown operator. Availble operators: +, -, * and /", end="")
+        exit(1)
     a = int(sys.argv[1])
     b = int(sys.argv[3])
     print("{} {} {} = {}".format(a, sys.argv[2], b, operations[sys.argv[2]](a, b)))
