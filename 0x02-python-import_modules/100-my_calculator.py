@@ -5,10 +5,10 @@ if __name__ == "__main__":
     if len(sys.argv) - 1 != 3:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
-        operations = {"+": add, "-": sub, "*": mul, "/": div}
-        if sys.argv[2] not in list(operations.keys()):
-            print("Unknown operator. Availble operators: +, -, & and /")
-            sys.exit(1)
-            a = int(argv[1])
-            b = int(argv[3])
-            print("{} {} {} = {}".format(a, sys.argv[2], b, operations[sys.argv[2]](a, b)))
+    operations = {"+": add, "-": sub, "*": mul, "/": div}
+    if sys.argv[2] not in list(operations.keys()):
+        print("Unknown operator. Availble operators: +, -, * and /")
+        sys.exit(1)
+    a = int(sys.argv[1])
+    b = int(sys.argv[3])
+    print("{} {} {} = {}".format(a, sys.argv[2], b, operations[sys.argv[2]](a, b)))
