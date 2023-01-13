@@ -8,7 +8,7 @@ if __name__ == "__main__":
     operations = {"+": add, "-": sub, "*": mul, "/": div}
     if sys.argv[2] not in list(operations.keys()):
         print("Unknown operator. Availble operators: +, -, * and /", end="")
-        exit(1)
+        sys.exit(1)
     a = int(sys.argv[1])
     b = int(sys.argv[3])
     print("{} {} {} = {}".format(a, sys.argv[2], b, operations[sys.argv[2]](a, b)))
