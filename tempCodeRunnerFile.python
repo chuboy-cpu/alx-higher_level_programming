@@ -1,33 +1,34 @@
-# #for i in range(1,22):
-#   #  if i % 2 != 0:
-#    #     print(i)
+class User:
+    id = 1
 
-import time
+u = User()
+User.id = 98
+print(u.id)
 
-def buildTraingles(size):
-    buildSize = size + 1
-    for i in range(1,buildSize):
-         print(f"{' '*(buildSize-i)} {f' *'*i} ")
-         time.sleep(0.3)
+class Base():
+    """ My base class """
 
+    __nb_instances = 0
 
+    def __init__(self):
+        Base.__nb_instances += 1
+        self.id = Base.__nb_instances
 
+class Base():
+    """ My base class """
 
-while True: 
-    noOfT = input('Enter the number of triangles: ')
-    buildTraingles(int(noOfT))
+    __nb_instances = 0
 
-# def buildTraingle(size):
-#     rows = size + (size-1)
-#     rangeLenght = rows * size
-#     cols = 1
-#     for i in range(rangeLenght):
-#         if i < rows-1:
-#             print(' ', end='')
-#         else:
-#             print('*', end='')
+    def __init__(self):
+        Base.__nb_instances += 1
+        self.id = Base.__nb_instances
 
-# # buildTraingle(2)
+class User(Base):
+    """ My User class """
 
-# cchcc
+    def __init__(self):
+        super().__init__()
+        self.id = 89
 
+u = User()
+print(u.id)
