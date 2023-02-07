@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
-    x = sorted(a_dictionary.items())
+    x = sorted(a_dictionary.values())
+    print(x)
     if x:
         for k in a_dictionary:
             if x[-1] == a_dictionary[k]:
