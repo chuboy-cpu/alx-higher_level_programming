@@ -20,7 +20,6 @@
 			sum += r_1
 			i += 1
 	return sum """
-
 def roman_to_int(roman_string):
     if not roman_string or type(roman_string) != str:
         return 0
